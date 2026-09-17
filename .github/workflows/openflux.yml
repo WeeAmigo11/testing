@@ -42,7 +42,7 @@ jobs:
           set +x
 
           git clone --depth 1 https://github.com/Kingofthedivanich/OpenFlux-WebGui.git
-          cd OpenFlux
+          cd OpenFlux-WebGui
 
           echo "OpenFlux commit:"
           git rev-parse --short HEAD

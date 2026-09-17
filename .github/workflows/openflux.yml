@@ -41,7 +41,7 @@ jobs:
         run: |
           set +x
 
-          git clone --depth 1 https://github.com/p1neappleXpress/OpenFlux.git
+          git clone --depth 1 https://github.com/Kingofthedivanich/OpenFlux-WebGui.git
           cd OpenFlux
 
           echo "OpenFlux commit:"

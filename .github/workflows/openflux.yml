@@ -80,12 +80,10 @@ jobs:
 
           sudo iptables -C OUTPUT \
             -p tcp \
-            -s "$LOCAL_IP" \
             --tcp-flags RST RST \
             -j DROP 2>/dev/null || \
           sudo iptables -A OUTPUT \
             -p tcp \
-            -s "$LOCAL_IP" \
             --tcp-flags RST RST \
             -j DROP
 
@@ -127,6 +125,6 @@ jobs:
           echo "======================================"
 
           exec sudo ./universal-bypass-tool \
-            --role=exit --mode=l3 \
+            --role=exit --mode=l4 \
             --transport mailru \
             --url "$YANDEX_DOC_URL"

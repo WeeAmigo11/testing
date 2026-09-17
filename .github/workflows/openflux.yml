@@ -125,6 +125,6 @@ jobs:
           echo "======================================"
 
           exec sudo ./universal-bypass-tool \
-            --role=exit --mode=l3 \
+            --role=exit --mode=l4 \
             --transport mailru \
             --url "$YANDEX_DOC_URL"

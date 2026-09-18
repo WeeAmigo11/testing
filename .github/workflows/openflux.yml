@@ -127,4 +127,5 @@ jobs:
           exec sudo ./openflux \
             --role=exit --mode=l4 \
             --transport mailru \
-            --url "$YANDEX_DOC_URL"
+            --url "$YANDEX_DOC_URL" \
+            --allow-plaintext
